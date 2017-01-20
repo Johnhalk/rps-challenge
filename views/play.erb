@@ -1,4 +1,4 @@
-<form name ='player_input' action='/rps' method='post'>
+<form name ='weapon_input' action='/rps' method='get'>
 <p style="color:#F62217"> <%= @player_1_name %> </p>
 
  Versus
@@ -6,5 +6,10 @@
 <p style="color:#4616F5"><%= @player_2_name %> </p>
 
 <!-- <a href="/rps"> Rock, Paper, Scissors !</a> -->
-  <input type='submit' value='Rock. Paper, Scissors!'>
+<label for='Choose_weapon'>
+  Choose your weapon: Rock, Paper or Scissors?
+  <input type='text' name='weapon'>
+</label><br>
+
+  <input type='submit' value='Rock, Paper, Scissors!'>
 </form>
